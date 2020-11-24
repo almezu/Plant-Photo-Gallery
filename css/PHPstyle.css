@@ -1,0 +1,50 @@
+* {
+	box-sizing: border-box;
+}
+
+h1 {
+	text-align: center;
+	font-size: 48px;
+}
+
+.outer-grid {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.inner-grid {
+	flex: 25%;
+	max-width: 100%;
+}
+
+.inner-grid img {
+	margin-top: 1.5%;
+	margin-left: 1%;
+	width: 30%;
+}
+
+@media screen and (max-width: 800px) {
+	.inner-grid {
+		flex:50%;
+		max-width: 50%;
+	}
+}
+
+@media screen and (max-width: 600px) {
+	.inner-grid {
+		flex: 100%;
+		max-width: 100%;
+	}
+}
+
+body {
+	background-color: #0d98ba;
+	color: white;
+	text-align: center;
+	font-family: Tahoma;
+}
+
+img {
+	width: 30%;
+	height: 30%;
+}
